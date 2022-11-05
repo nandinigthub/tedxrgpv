@@ -136,11 +136,7 @@
         margin:0 auto;
     }
     
-    *{
-               --mastC: red;
-            --firstC:white;
-    }
-    
+   
     section{
 /*            margin-top: 3rem;*/
         margin-top: -3rem;
@@ -152,18 +148,6 @@
         z-index: 2;
         overflow: hidden
     }
-    .mast::before,
-    .first::before{
-       position: absolute;
-        content: " ";
-        display: block;
-        z-index:-1;
-        top: 2rem;
-        left: -2rem;
-        right: -2rem;
-        bottom: 2rem;
-    }
- 
 
     .mast{
         padding-top: 5rem;
@@ -171,7 +155,7 @@
 </style>
 
 <div class="wrapper">
-    <header class="mast" style="color: #fff">
+    <header class="mast" style="color: red">
         <h1>  Our Mission: Spread ideas</h1>
     </header>
     <section class="first">
