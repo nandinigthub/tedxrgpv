@@ -137,8 +137,8 @@
     }
     
     *{
-               --mastC: hsl(74deg, 84%, 89%);
-            --firstC: hsl(74deg, 34%, 59%);
+               --mastC: red;
+            --firstC:white;
     }
     
     section{
@@ -163,16 +163,7 @@
         right: -2rem;
         bottom: 2rem;
     }
-    .mast::before{
-        border-top: 2rem dashed var(--secondC);
-        background-color: var(--mastC);
-        transform: rotate(-4deg)
-    }
-    .first::before{
-        background-color: var(--firstC);
-        transform: rotate(3deg);
-        border-bottom: 2rem solid var(--mastC);
-    }
+ 
 
     .mast{
         padding-top: 5rem;
