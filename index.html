@@ -130,27 +130,15 @@
 
   <style>
  
- /* :root{
-            --hue: 74deg;
-            --mastC: hsl(74deg, 84%, 89%);
-            --firstC: hsl(74deg, 34%, 59%);
-            --secondC: hsl(74deg, 64%, 29%);
-            --thirdC: hsl(74deg, 34%, 29%);
-            --darkTxt: hsl(74deg, 80%, 20%);
-            --lightTxt: hsl(74deg, 80%, 80%);
-        } */
-
+ 
     .wrapper{
         max-width: 1000px;
         margin:0 auto;
     }
     
-    .mast h1,
-    .mast h2{
-        color: var(--darkTxt);
-    }
-    .first h2{
-        color: var(--darkTxt);
+    *{
+               --mastC: hsl(74deg, 84%, 89%);
+            --firstC: hsl(74deg, 34%, 59%);
     }
     
     section{
@@ -158,19 +146,15 @@
         margin-top: -3rem;
     }
     .mast, 
-    .first,
-    .second, 
-    .third{
+    .first{
         padding: 3rem 2rem 5rem;
         position: relative;
         z-index: 2;
         overflow: hidden
     }
     .mast::before,
-    .first::before,
-    .second::before,
-    .third::before{
-        position: absolute;
+    .first::before{
+       position: absolute;
         content: " ";
         display: block;
         z-index:-1;
@@ -196,11 +180,11 @@
 </style>
 
 <div class="wrapper">
-    <header class="mast">
+    <header class="mast" style="color: #fff">
         <h1>  Our Mission: Spread ideas</h1>
     </header>
     <section class="first">
-   <p>
+   <p style="color: #fff">
 TED is a global community, welcoming people from every discipline and culture who seek a deeper understanding of the world. We believe passionately in the power of ideas to change attitudes, lives and, ultimately, the world. On TED.com, we're building a clearinghouse of free knowledge from the world's most inspired thinkers — and a community of curious souls to engage with ideas and each other, both online and at TED and TEDx events around the world, all year long.</p>
     </section>
 
